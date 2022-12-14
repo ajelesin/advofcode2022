@@ -1,0 +1,19 @@
+
+
+var lines = Debugger.IsAttached
+    ? File.ReadLines("..\\..\\..\\debug.txt")
+    : File.ReadLines("..\\..\\..\\input.txt");
+
+Console.WriteLine("f1: " + f1(lines));
+Console.WriteLine("f2: " + f2(lines));
+Console.ReadLine();
+
+static string f2(IEnumerable<string> lines)
+{
+    return null;
+}
+
+static string f1(IEnumerable<string> lines)
+{
+    return null;
+}
