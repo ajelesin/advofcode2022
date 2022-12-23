@@ -1,19 +1,13 @@
+Console.Write("release? (r) ");
 
+var lines = Console.ReadLine() == "r"
+    ? File.ReadLines("..\\..\\..\\input.txt")
+    : File.ReadLines("..\\..\\..\\debug.txt");
 
-var lines = Debugger.IsAttached
-    ? File.ReadLines("..\\..\\..\\debug.txt")
-    : File.ReadLines("..\\..\\..\\input.txt");
-
-Console.WriteLine("f1: " + f1(lines));
-Console.WriteLine("f2: " + f2(lines));
+f1(lines);
 Console.ReadLine();
 
-static string f2(IEnumerable<string> lines)
+void f1(IEnumerable<string> lines)
 {
-    return null;
-}
 
-static string f1(IEnumerable<string> lines)
-{
-    return null;
 }
